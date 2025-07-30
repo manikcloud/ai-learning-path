@@ -1,0 +1,286 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pythonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776ab;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd43b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="libraryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="projectGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2c3e50">
+    🐍 Session 1: Python Fundamentals Architecture
+  </text>
+  
+  <!-- Python Core -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="80" width="300" height="180" rx="15" fill="url(#pythonGradient)"/>
+    <text x="600" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      Python Core Concepts
+    </text>
+    <text x="600" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      • Variables & Data Types
+    </text>
+    <text x="600" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      • Control Structures (if/for/while)
+    </text>
+    <text x="600" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      • Functions & Classes
+    </text>
+    <text x="600" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      • File Handling & Exceptions
+    </text>
+    <text x="600" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      • Object-Oriented Programming
+    </text>
+    <text x="600" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      • Best Practices & Standards
+    </text>
+  </g>
+  
+  <!-- Essential Libraries -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="300" width="200" height="120" rx="10" fill="url(#libraryGradient)"/>
+    <text x="150" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      NumPy
+    </text>
+    <text x="150" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Numerical Computing
+    </text>
+    <text x="150" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Array Operations
+    </text>
+    <text x="150" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Mathematical Functions
+    </text>
+    <text x="150" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Linear Algebra
+    </text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="270" y="300" width="200" height="120" rx="10" fill="url(#libraryGradient)"/>
+    <text x="370" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Pandas
+    </text>
+    <text x="370" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Data Manipulation
+    </text>
+    <text x="370" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • DataFrame Operations
+    </text>
+    <text x="370" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Data Cleaning
+    </text>
+    <text x="370" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • CSV/JSON Handling
+    </text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="490" y="300" width="200" height="120" rx="10" fill="url(#libraryGradient)"/>
+    <text x="590" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Matplotlib
+    </text>
+    <text x="590" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Data Visualization
+    </text>
+    <text x="590" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Charts & Graphs
+    </text>
+    <text x="590" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Statistical Plots
+    </text>
+    <text x="590" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Interactive Plots
+    </text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="710" y="300" width="200" height="120" rx="10" fill="url(#libraryGradient)"/>
+    <text x="810" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      TensorFlow
+    </text>
+    <text x="810" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Neural Networks
+    </text>
+    <text x="810" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Deep Learning
+    </text>
+    <text x="810" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Model Training
+    </text>
+    <text x="810" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Keras Integration
+    </text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="930" y="300" width="200" height="120" rx="10" fill="url(#libraryGradient)"/>
+    <text x="1030" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      PyTorch
+    </text>
+    <text x="1030" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Dynamic Graphs
+    </text>
+    <text x="1030" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Research-Friendly
+    </text>
+    <text x="1030" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • GPU Acceleration
+    </text>
+    <text x="1030" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Autograd System
+    </text>
+  </g>
+  
+  <!-- Projects -->
+  <g filter="url(#shadow)">
+    <rect x="150" y="480" width="250" height="120" rx="10" fill="url(#projectGradient)"/>
+    <text x="275" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Project 1: Data Dashboard
+    </text>
+    <text x="275" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Startup Ecosystem Analysis
+    </text>
+    <text x="275" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Interactive Visualizations
+    </text>
+    <text x="275" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Trend Analysis
+    </text>
+    <text x="275" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Report Generation
+    </text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="450" y="480" width="250" height="120" rx="10" fill="url(#projectGradient)"/>
+    <text x="575" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Project 2: API Integration
+    </text>
+    <text x="575" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Weather Data Aggregator
+    </text>
+    <text x="575" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Multiple API Sources
+    </text>
+    <text x="575" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Data Processing
+    </text>
+    <text x="575" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • CLI Interface
+    </text>
+  </g>
+  
+  <g filter="url(#shadow)">
+    <rect x="750" y="480" width="250" height="120" rx="10" fill="url(#projectGradient)"/>
+    <text x="875" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Project 3: ML Predictor
+    </text>
+    <text x="875" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • House Price Prediction
+    </text>
+    <text x="875" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Multiple Algorithms
+    </text>
+    <text x="875" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Model Comparison
+    </text>
+    <text x="875" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Prediction Interface
+    </text>
+  </g>
+  
+  <!-- Learning Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- From Python Core to Libraries -->
+  <line x1="500" y1="260" x2="150" y2="300" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="260" x2="370" y2="300" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="600" y1="260" x2="590" y2="300" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="260" x2="810" y2="300" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="260" x2="1030" y2="300" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- From Libraries to Projects -->
+  <line x1="150" y1="420" x2="275" y2="480" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="370" y1="420" x2="275" y2="480" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="590" y1="420" x2="575" y2="480" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="810" y1="420" x2="875" y2="480" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1030" y1="420" x2="875" y2="480" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Skills Acquired -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="650" width="1100" height="120" rx="15" fill="#2c3e50"/>
+    <text x="600" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      Skills Acquired After Session 1
+    </text>
+    
+    <text x="200" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Programming Mastery
+    </text>
+    <text x="200" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Clean, efficient Python code
+    </text>
+    <text x="200" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Object-oriented design
+    </text>
+    
+    <text x="400" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2ecc71">
+      Data Handling
+    </text>
+    <text x="400" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Data analysis & visualization
+    </text>
+    <text x="400" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      File processing & APIs
+    </text>
+    
+    <text x="600" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f39c12">
+      ML Foundation
+    </text>
+    <text x="600" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      TensorFlow & PyTorch basics
+    </text>
+    <text x="600" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Neural network concepts
+    </text>
+    
+    <text x="800" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9b59b6">
+      Project Skills
+    </text>
+    <text x="800" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      End-to-end development
+    </text>
+    <text x="800" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Problem-solving approach
+    </text>
+    
+    <text x="1000" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+      Industry Readiness
+    </text>
+    <text x="1000" y="730" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Best practices & standards
+    </text>
+    <text x="1000" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Professional development
+    </text>
+  </g>
+</svg>

@@ -1,5 +1,7 @@
 # 🤖 AI Learning Path - Complete Training Program
 
+![AI Learning Path Overview](./images/ai-learning-path-overview.svg)
+
 ## 🎯 About This Program
 
 Welcome to the **AI Learning Path** - a comprehensive training program designed by experienced AI trainers. This hands-on curriculum takes you from Python fundamentals to advanced AI concepts like RAG, Agents, and Model Context Protocol (MCP).
@@ -14,6 +16,8 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ### 🐍 Session 1: Python Fundamentals (Hands-on)
 **Duration**: 8-10 hours | **Type**: Practical Workshop
+
+![Python Fundamentals](./images/python-fundamentals-diagram.svg)
 
 #### What You'll Master:
 - **Python Fundamentals**
@@ -201,6 +205,8 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 ### 🔍 Session 6: RAG (Retrieval-Augmented Generation) (Theory + Hands-on)
 **Duration**: 10-12 hours | **Type**: Advanced Implementation
 
+![RAG Architecture](./images/rag-architecture-diagram.svg)
+
 #### RAG Architecture Deep Dive:
 - **How RAG Works**
   - Vector embeddings and similarity search
@@ -242,6 +248,8 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ### 🤖 Session 7: Agents (Theory + Hands-on)
 **Duration**: 15-18 hours | **Type**: Advanced AI Development
+
+![AI Agents Architecture](./images/ai-agents-architecture.svg)
 
 #### Agentic AI Fundamentals:
 - **What is Agentic AI?**
@@ -452,6 +460,12 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 ```
 ai-learning-path/
 ├── README.md (this file)
+├── SLIDES.md (120-slide teaching presentation)
+├── images/ (Professional SVG diagrams)
+│   ├── ai-learning-path-overview.svg
+│   ├── python-fundamentals-diagram.svg
+│   ├── rag-architecture-diagram.svg
+│   └── ai-agents-architecture.svg
 ├── Session-1-Python-Fundamentals/
 ├── Session-2-AI-ML-NLP-Fundamentals/
 ├── Session-3-DevOps-Fundamentals/
@@ -462,6 +476,27 @@ ai-learning-path/
 ├── Session-8-MCP/
 └── resources/
 ```
+
+## 🎓 Teaching Materials
+
+### 📊 Visual Learning Resources
+- **Professional SVG Diagrams**: 4 comprehensive architecture diagrams
+- **Interactive Presentations**: 120-slide teaching deck in `SLIDES.md`
+- **Block Diagrams**: Visual representation of each session's concepts
+- **Learning Flow**: Clear progression from basics to advanced topics
+
+### 🎯 Slide Presentation Structure
+The complete teaching presentation includes:
+- **Module 1**: Program Overview (Slides 1-15)
+- **Module 2**: Python Fundamentals (Slides 16-30)
+- **Module 3**: AI/ML Theory (Slides 31-45)
+- **Module 4**: RAG Systems (Slides 46-60)
+- **Module 5**: AI Agents (Slides 61-75)
+- **Module 6**: Implementation Examples (Slides 76-90)
+- **Module 7**: Assessment Framework (Slides 91-105)
+- **Module 8**: Career Development (Slides 106-120)
+
+*View the complete slide deck: [SLIDES.md](./SLIDES.md)*
 
 ---
 

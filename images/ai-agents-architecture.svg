@@ -1,0 +1,383 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="agentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd79a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e84393;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="memoryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#74b9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0984e3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="toolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a085;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="planningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdcb6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e17055;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="executionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c5ce7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2c3e50">
+    🤖 Session 7: AI Agents Architecture & Multi-Agent Systems
+  </text>
+  
+  <!-- Central Agent Core -->
+  <g filter="url(#shadow)">
+    <circle cx="700" cy="200" r="80" fill="url(#agentGradient)"/>
+    <text x="700" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      AI Agent
+    </text>
+    <text x="700" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      Core
+    </text>
+    <text x="700" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🎯 Goal-Oriented
+    </text>
+    <text x="700" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🧠 Decision Making
+    </text>
+  </g>
+  
+  <!-- Memory System -->
+  <g filter="url(#shadow)">
+    <rect x="100" y="120" width="200" height="160" rx="15" fill="url(#memoryGradient)"/>
+    <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Memory System
+    </text>
+    
+    <text x="200" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      Short-term Memory
+    </text>
+    <text x="200" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Working context
+    </text>
+    <text x="200" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Current conversation
+    </text>
+    
+    <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      Long-term Memory
+    </text>
+    <text x="200" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Knowledge persistence
+    </text>
+    <text x="200" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Experience storage
+    </text>
+    <text x="200" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Learning patterns
+    </text>
+  </g>
+  
+  <!-- Tool/API Integration -->
+  <g filter="url(#shadow)">
+    <rect x="1100" y="120" width="200" height="160" rx="15" fill="url(#toolGradient)"/>
+    <text x="1200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Tool Integration
+    </text>
+    
+    <text x="1200" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🌐 Web APIs
+    </text>
+    <text x="1200" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🗄️ Database Access
+    </text>
+    <text x="1200" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      📊 Data Analysis Tools
+    </text>
+    <text x="1200" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      📧 Communication APIs
+    </text>
+    <text x="1200" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🔧 Custom Functions
+    </text>
+    <text x="1200" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      ⚡ Real-time Services
+    </text>
+    <text x="1200" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🔄 Tool Chaining
+    </text>
+  </g>
+  
+  <!-- Planning System -->
+  <g filter="url(#shadow)">
+    <rect x="450" y="50" width="200" height="120" rx="15" fill="url(#planningGradient)"/>
+    <text x="550" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Planning System
+    </text>
+    <text x="550" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🎯 Goal Decomposition
+    </text>
+    <text x="550" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      📋 Task Prioritization
+    </text>
+    <text x="550" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🔄 Dynamic Replanning
+    </text>
+    <text x="550" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      ⏱️ Resource Allocation
+    </text>
+  </g>
+  
+  <!-- Execution & Monitoring -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="50" width="200" height="120" rx="15" fill="url(#executionGradient)"/>
+    <text x="850" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+      Execution Loop
+    </text>
+    <text x="850" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      ▶️ Action Execution
+    </text>
+    <text x="850" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      📊 Progress Monitoring
+    </text>
+    <text x="850" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🔄 Feedback Processing
+    </text>
+    <text x="850" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      🛠️ Error Recovery
+    </text>
+  </g>
+  
+  <!-- Multi-Agent Collaboration -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="350" width="1300" height="200" rx="15" fill="#2c3e50"/>
+    <text x="700" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      Multi-Agent Collaboration System
+    </text>
+    
+    <!-- Agent 1 -->
+    <g>
+      <circle cx="200" cy="450" r="40" fill="#3498db"/>
+      <text x="200" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+        Research
+      </text>
+      <text x="200" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        Agent
+      </text>
+    </g>
+    
+    <!-- Agent 2 -->
+    <g>
+      <circle cx="400" cy="450" r="40" fill="#2ecc71"/>
+      <text x="400" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+        Analysis
+      </text>
+      <text x="400" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        Agent
+      </text>
+    </g>
+    
+    <!-- Agent 3 -->
+    <g>
+      <circle cx="600" cy="450" r="40" fill="#e74c3c"/>
+      <text x="600" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+        Writing
+      </text>
+      <text x="600" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        Agent
+      </text>
+    </g>
+    
+    <!-- Agent 4 -->
+    <g>
+      <circle cx="800" cy="450" r="40" fill="#f39c12"/>
+      <text x="800" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+        Review
+      </text>
+      <text x="800" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        Agent
+      </text>
+    </g>
+    
+    <!-- Agent 5 -->
+    <g>
+      <circle cx="1000" cy="450" r="40" fill="#9b59b6"/>
+      <text x="1000" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+        Deploy
+      </text>
+      <text x="1000" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        Agent
+      </text>
+    </g>
+    
+    <!-- Coordinator -->
+    <g>
+      <circle cx="600" cy="520" r="30" fill="#1abc9c"/>
+      <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+        Coordinator
+      </text>
+    </g>
+    
+    <!-- Communication Lines -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#ecf0f1"/>
+      </marker>
+    </defs>
+    
+    <line x1="240" y1="450" x2="360" y2="450" stroke="#ecf0f1" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="440" y1="450" x2="560" y2="450" stroke="#ecf0f1" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="640" y1="450" x2="760" y2="450" stroke="#ecf0f1" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="840" y1="450" x2="960" y2="450" stroke="#ecf0f1" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Coordinator connections -->
+    <line x1="580" y1="500" x2="220" y2="470" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="590" y1="500" x2="410" y2="470" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="610" y1="500" x2="790" y2="470" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="620" y1="500" x2="980" y2="470" stroke="#ecf0f1" stroke-width="1" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Agent Communication Protocol -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="580" width="600" height="120" rx="15" fill="#34495e"/>
+    <text x="350" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Agent-to-Agent Protocol (A2A)
+    </text>
+    
+    <text x="200" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Message Passing
+    </text>
+    <text x="200" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Structured communication
+    </text>
+    <text x="200" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Event-driven messaging
+    </text>
+    <text x="200" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Async processing
+    </text>
+    
+    <text x="500" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2ecc71">
+      Coordination
+    </text>
+    <text x="500" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Task distribution
+    </text>
+    <text x="500" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Conflict resolution
+    </text>
+    <text x="500" y="680" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Resource sharing
+    </text>
+  </g>
+  
+  <!-- Projects -->
+  <g filter="url(#shadow)">
+    <rect x="700" y="580" width="650" height="120" rx="15" fill="#e67e22"/>
+    <text x="1025" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Complex Agent Projects
+    </text>
+    
+    <text x="850" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🤖 Personal AI Assistant
+    </text>
+    <text x="850" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Comprehensive agent system
+    </text>
+    <text x="850" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Multi-modal capabilities
+    </text>
+    
+    <text x="1200" y="635" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🏢 Enterprise Automation
+    </text>
+    <text x="1200" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Business process agents
+    </text>
+    <text x="1200" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      Workflow optimization
+    </text>
+  </g>
+  
+  <!-- Connection Lines from Core -->
+  <line x1="620" y1="200" x2="300" y2="200" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="780" y1="200" x2="1100" y2="200" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="650" y1="150" x2="550" y2="120" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="750" y1="150" x2="850" y2="120" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Agent Capabilities -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="730" width="1300" height="130" rx="15" fill="#2c3e50"/>
+    <text x="700" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">
+      Advanced Agent Capabilities & Use Cases
+    </text>
+    
+    <text x="200" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#3498db">
+      Autonomous Decision Making
+    </text>
+    <text x="200" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Goal-oriented behavior
+    </text>
+    <text x="200" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Dynamic adaptation
+    </text>
+    <text x="200" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Context awareness
+    </text>
+    
+    <text x="450" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2ecc71">
+      Learning & Adaptation
+    </text>
+    <text x="450" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Experience-based learning
+    </text>
+    <text x="450" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Pattern recognition
+    </text>
+    <text x="450" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Continuous improvement
+    </text>
+    
+    <text x="700" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f39c12">
+      Complex Task Handling
+    </text>
+    <text x="700" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Multi-step workflows
+    </text>
+    <text x="700" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Parallel processing
+    </text>
+    <text x="700" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Error handling & recovery
+    </text>
+    
+    <text x="950" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9b59b6">
+      Human Collaboration
+    </text>
+    <text x="950" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Human-in-the-loop
+    </text>
+    <text x="950" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Explainable decisions
+    </text>
+    <text x="950" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Trust & transparency
+    </text>
+    
+    <text x="1200" y="790" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+      Enterprise Integration
+    </text>
+    <text x="1200" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • System interoperability
+    </text>
+    <text x="1200" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Scalable deployment
+    </text>
+    <text x="1200" y="840" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      • Security & compliance
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,366 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pythonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776ab;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffd43b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ee5a24;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="devopsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44a08d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="promptGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7fcdcd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="apiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd93d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6b35;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="ragGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c5ce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a29bfe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="agentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fd79a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e84393;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mcpGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00a085;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2c3e50">
+    AI Learning Path - Complete Journey
+  </text>
+  <text x="700" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#7f8c8d">
+    From Python Fundamentals to Advanced AI Systems
+  </text>
+  
+  <!-- Session 1: Python Fundamentals -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="120" width="300" height="140" rx="15" fill="url(#pythonGradient)"/>
+    <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 1: Python Fundamentals
+    </text>
+    <text x="200" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🐍 Core Python Programming
+    </text>
+    <text x="200" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      📊 NumPy, Pandas, Matplotlib
+    </text>
+    <text x="200" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🤖 TensorFlow, PyTorch Intro
+    </text>
+    <text x="200" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🛠️ 3 Hands-on Projects
+    </text>
+  </g>
+  
+  <!-- Session 2: AI/ML/NLP Fundamentals -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="120" width="300" height="140" rx="15" fill="url(#aiGradient)"/>
+    <text x="550" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 2: AI/ML/NLP Theory
+    </text>
+    <text x="550" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🧠 AI Fundamentals & Types
+    </text>
+    <text x="550" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      ⚙️ Core ML Algorithms
+    </text>
+    <text x="550" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      📈 Model Evaluation
+    </text>
+    <text x="550" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      💡 Real-world Applications
+    </text>
+  </g>
+  
+  <!-- Session 3: DevOps Fundamentals -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="120" width="300" height="140" rx="15" fill="url(#devopsGradient)"/>
+    <text x="900" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 3: DevOps Fundamentals
+    </text>
+    <text x="900" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔄 Git & Version Control
+    </text>
+    <text x="900" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🚀 CI/CD Pipelines
+    </text>
+    <text x="900" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      ☁️ Cloud Basics (AWS/GCP)
+    </text>
+    <text x="900" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🏗️ Infrastructure as Code
+    </text>
+  </g>
+  
+  <!-- Session 4: Prompt Engineering -->
+  <g filter="url(#shadow)">
+    <rect x="1100" y="120" width="250" height="140" rx="15" fill="url(#promptGradient)"/>
+    <text x="1225" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 4: Prompting
+    </text>
+    <text x="1225" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🎭 Role-based Prompts
+    </text>
+    <text x="1225" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔗 Chain-of-Thought
+    </text>
+    <text x="1225" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      📝 Few-Shot Learning
+    </text>
+    <text x="1225" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔍 RAG Prompts
+    </text>
+  </g>
+  
+  <!-- Session 5: AutoX (API + UI) -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="320" width="300" height="140" rx="15" fill="url(#apiGradient)"/>
+    <text x="200" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 5: AutoX (API + UI)
+    </text>
+    <text x="200" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🌐 RESTful API Design
+    </text>
+    <text x="200" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      ⚡ FastAPI Framework
+    </text>
+    <text x="200" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      💻 React/Vue.js Frontend
+    </text>
+    <text x="200" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔗 Full-Stack Integration
+    </text>
+  </g>
+  
+  <!-- Session 6: RAG -->
+  <g filter="url(#shadow)">
+    <rect x="400" y="320" width="300" height="140" rx="15" fill="url(#ragGradient)"/>
+    <text x="550" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 6: RAG Systems
+    </text>
+    <text x="550" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔍 Vector Embeddings
+    </text>
+    <text x="550" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🦜 LangChain Framework
+    </text>
+    <text x="550" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🗄️ Vector Databases
+    </text>
+    <text x="550" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      📚 Knowledge Systems
+    </text>
+  </g>
+  
+  <!-- Session 7: Agents -->
+  <g filter="url(#shadow)">
+    <rect x="750" y="320" width="300" height="140" rx="15" fill="url(#agentGradient)"/>
+    <text x="900" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 7: AI Agents
+    </text>
+    <text x="900" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🎯 Goal-Oriented Systems
+    </text>
+    <text x="900" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🧠 Memory Management
+    </text>
+    <text x="900" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔧 Tool Integration
+    </text>
+    <text x="900" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🤝 Multi-Agent Systems
+    </text>
+  </g>
+  
+  <!-- Session 8: MCP -->
+  <g filter="url(#shadow)">
+    <rect x="1100" y="320" width="250" height="140" rx="15" fill="url(#mcpGradient)"/>
+    <text x="1225" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Session 8: MCP
+    </text>
+    <text x="1225" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔗 Context Protocol
+    </text>
+    <text x="1225" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🔄 Model Integration
+    </text>
+    <text x="1225" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      📡 Protocol Standards
+    </text>
+    <text x="1225" y="435" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🏢 Enterprise Systems
+    </text>
+  </g>
+  
+  <!-- Learning Path Flow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e"/>
+    </marker>
+  </defs>
+  
+  <!-- Horizontal arrows -->
+  <line x1="350" y1="190" x2="400" y2="190" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="190" x2="750" y2="190" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1050" y1="190" x2="1100" y2="190" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Vertical arrows -->
+  <line x1="200" y1="260" x2="200" y2="320" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="260" x2="550" y2="320" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="900" y1="260" x2="900" y2="320" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1225" y1="260" x2="1225" y2="320" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Horizontal arrows bottom row -->
+  <line x1="350" y1="390" x2="400" y2="390" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="390" x2="750" y2="390" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1050" y1="390" x2="1100" y2="390" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Learning Outcomes -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="520" width="1300" height="180" rx="15" fill="#2c3e50"/>
+    <text x="700" y="550" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+      Learning Outcomes & Career Paths
+    </text>
+    
+    <!-- Career paths -->
+    <g>
+      <rect x="80" y="570" width="200" height="100" rx="10" fill="#3498db"/>
+      <text x="180" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+        AI/ML Engineer
+      </text>
+      <text x="180" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Model Development
+      </text>
+      <text x="180" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Pipeline Design
+      </text>
+      <text x="180" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Production Deployment
+      </text>
+    </g>
+    
+    <g>
+      <rect x="300" y="570" width="200" height="100" rx="10" fill="#2ecc71"/>
+      <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+        Data Scientist
+      </text>
+      <text x="400" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Data Analysis
+      </text>
+      <text x="400" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Statistical Modeling
+      </text>
+      <text x="400" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Business Insights
+      </text>
+    </g>
+    
+    <g>
+      <rect x="520" y="570" width="200" height="100" rx="10" fill="#e74c3c"/>
+      <text x="620" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+        AI Consultant
+      </text>
+      <text x="620" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Solution Architecture
+      </text>
+      <text x="620" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Strategy Planning
+      </text>
+      <text x="620" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Implementation
+      </text>
+    </g>
+    
+    <g>
+      <rect x="740" y="570" width="200" height="100" rx="10" fill="#f39c12"/>
+      <text x="840" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+        Full-Stack AI Dev
+      </text>
+      <text x="840" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • End-to-end Systems
+      </text>
+      <text x="840" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • API Development
+      </text>
+      <text x="840" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • UI/UX Integration
+      </text>
+    </g>
+    
+    <g>
+      <rect x="960" y="570" width="200" height="100" rx="10" fill="#9b59b6"/>
+      <text x="1060" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+        AI Product Manager
+      </text>
+      <text x="1060" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Product Strategy
+      </text>
+      <text x="1060" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Team Leadership
+      </text>
+      <text x="1060" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Market Analysis
+      </text>
+    </g>
+    
+    <g>
+      <rect x="1180" y="570" width="150" height="100" rx="10" fill="#1abc9c"/>
+      <text x="1255" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+        Entrepreneur
+      </text>
+      <text x="1255" y="615" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • AI Startups
+      </text>
+      <text x="1255" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Innovation
+      </text>
+      <text x="1255" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+        • Leadership
+      </text>
+    </g>
+  </g>
+  
+  <!-- Duration and Format -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="750" width="600" height="100" rx="15" fill="#34495e"/>
+    <text x="350" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Program Details
+    </text>
+    <text x="350" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      📅 Duration: 8-16 weeks | 🎓 Format: Hybrid Learning
+    </text>
+    <text x="350" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      👥 Max 15 students | 🏆 Industry Certification
+    </text>
+  </g>
+  
+  <!-- Trainer Info -->
+  <g filter="url(#shadow)">
+    <rect x="700" y="750" width="650" height="100" rx="15" fill="#e67e22"/>
+    <text x="1025" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+      Expert Trainer
+    </text>
+    <text x="1025" y="805" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      👨‍🏫 Varun Kumar - AI Expert & AWS Ambassador
+    </text>
+    <text x="1025" y="825" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">
+      🚀 Hands-on Learning | 💼 Industry Experience
+    </text>
+  </g>
+</svg>
