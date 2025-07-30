@@ -416,25 +416,5 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ---
 
-## 🚀 Getting Started
-
-### 📅 Program Schedule:
-- **Duration**: 8 weeks (intensive) or 16 weeks (part-time)
-- **Format**: Hybrid (online + offline sessions)
-- **Batch Size**: Maximum 15 students for personalized attention
-- **Timing**: Flexible scheduling for working professionals
-
-### 💰 Investment:
-- **Early Bird**: Special pricing for first 10 registrations
-- **EMI Options**: Flexible payment plans available
-- **Scholarship**: Merit-based financial assistance
-- **Corporate Training**: Bulk pricing for organizations
-
-### 📞 Contact Information:
-- **Trainer**: Varun Kumar - AI Expert & AWS Ambassador
-- **Email**: training@ai-learning-path.com
-- **Website**: www.ai-learning-path.com
-
----
-
-**Created by Varun Kumar**
+**Trainer: Varun Kumar - AI Expert & AWS Ambassador**  
+[LinkedIn Profile](https://www.linkedin.com/in/varunkumar)
