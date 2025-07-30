@@ -2,11 +2,10 @@
 
 ## 🎯 About This Program
 
-Welcome to the **AI Learning Path** - a comprehensive training program designed by experienced AI trainers from Delhi, India. This hands-on curriculum takes you from Python fundamentals to advanced AI concepts like RAG, Agents, and Model Context Protocol (MCP).
+Welcome to the **AI Learning Path** - a comprehensive training program designed by experienced AI trainers. This hands-on curriculum takes you from Python fundamentals to advanced AI concepts like RAG, Agents, and Model Context Protocol (MCP).
 
-### 👨‍🏫 Your Trainers
-**Location**: Delhi, India  
-**Approach**: Human-centered, practical learning with Indian context  
+### 👨‍🏫 Your Trainer
+**Expert**: Varun Kumar - AI Expert & AWS Ambassador  
 **Philosophy**: Learn by doing, build real projects, understand concepts deeply  
 
 ---
@@ -346,11 +345,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ## 🎓 Learning Methodology
 
-### 🇮🇳 Indian Context Integration
-- **Local Use Cases**: Examples from Indian businesses and scenarios
-- **Regional Languages**: Multi-lingual AI applications
-- **Cultural Sensitivity**: AI ethics in Indian context
-- **Industry Focus**: IT services, e-commerce, fintech applications
+### 🌐 Global Context Integration
+- **Real-world Use Cases**: Examples from various business scenarios
+- **Multi-domain Applications**: Cross-industry AI applications
+- **Cultural Awareness**: AI ethics and responsible development
+- **Industry Focus**: Technology, e-commerce, fintech applications
 
 ### 👥 Human-Centered Approach
 - **Interactive Learning**: Live coding sessions and pair programming
@@ -403,7 +402,7 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ### 📅 Program Schedule:
 - **Duration**: 8 weeks (intensive) or 16 weeks (part-time)
-- **Format**: Hybrid (online + offline sessions in Delhi)
+- **Format**: Hybrid (online + offline sessions)
 - **Batch Size**: Maximum 15 students for personalized attention
 - **Timing**: Flexible scheduling for working professionals
 
@@ -414,9 +413,8 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 - **Corporate Training**: Bulk pricing for organizations
 
 ### 📞 Contact Information:
-- **Location**: Delhi, India
+- **Trainer**: Varun Kumar - AI Expert & AWS Ambassador
 - **Email**: training@ai-learning-path.com
-- **Phone**: +91-XXXX-XXXX-XX
 - **Website**: www.ai-learning-path.com
 
 ---
@@ -469,14 +467,14 @@ ai-learning-path/
 
 **🎉 Ready to Transform Your Career with AI? Join the AI Learning Path Today!**
 
-*Empowering the next generation of AI professionals in India* 🇮🇳
+*Empowering the next generation of AI professionals worldwide* 🌍
 
 ---
 
-*This program is designed and delivered by experienced AI trainers based in Delhi, India, with a focus on practical, hands-on learning that prepares students for real-world AI challenges and opportunities.*
+*This program is designed and delivered by experienced AI trainers with a focus on practical, hands-on learning that prepares students for real-world AI challenges and opportunities.*
 
 ---
 
 **Created by Varun Kumar**
 
-*AI Learning Path - Complete Training Program for Indian Professionals*
+*AI Expert & AWS Ambassador - Complete AI Learning Path for Professionals*
