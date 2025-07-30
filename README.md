@@ -1,9 +1,5 @@
 # 🤖 AI Learning Path - Complete Training Program
 
-<div align="center">
-  <img src="images/ai-learning-path-overview.svg" alt="AI Learning Path Overview" width="100%">
-</div>
-
 ## 🎯 About This Program
 
 Welcome to the **AI Learning Path** - a comprehensive training program designed by experienced AI trainers. This hands-on curriculum takes you from Python fundamentals to advanced AI concepts like RAG, Agents, and Model Context Protocol (MCP).
@@ -18,10 +14,6 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ### 🐍 Session 1: Python Fundamentals (Hands-on)
 **Duration**: 8-10 hours | **Type**: Practical Workshop
-
-<div align="center">
-  <img src="images/python-fundamentals-diagram.svg" alt="Python Fundamentals Architecture" width="100%">
-</div>
 
 #### What You'll Master:
 - **Python Fundamentals**
@@ -209,10 +201,6 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 ### 🔍 Session 6: RAG (Retrieval-Augmented Generation) (Theory + Hands-on)
 **Duration**: 10-12 hours | **Type**: Advanced Implementation
 
-<div align="center">
-  <img src="images/rag-architecture-diagram.svg" alt="RAG Architecture Diagram" width="100%">
-</div>
-
 #### RAG Architecture Deep Dive:
 - **How RAG Works**
   - Vector embeddings and similarity search
@@ -254,10 +242,6 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ### 🤖 Session 7: Agents (Theory + Hands-on)
 **Duration**: 15-18 hours | **Type**: Advanced AI Development
-
-<div align="center">
-  <img src="images/ai-agents-architecture.svg" alt="AI Agents Architecture" width="100%">
-</div>
 
 #### Agentic AI Fundamentals:
 - **What is Agentic AI?**
