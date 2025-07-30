@@ -474,3 +474,9 @@ ai-learning-path/
 ---
 
 *This program is designed and delivered by experienced AI trainers based in Delhi, India, with a focus on practical, hands-on learning that prepares students for real-world AI challenges and opportunities.*
+
+---
+
+**Created by Varun Kumar**
+
+*AI Learning Path - Complete Training Program for Indian Professionals*
