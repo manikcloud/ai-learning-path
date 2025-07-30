@@ -16,7 +16,9 @@
 - **Focus**: Hands-on, project-based learning
 - **Outcome**: Industry-ready AI professionals
 
-![AI Learning Path Overview](./images/ai-learning-path-overview.svg)
+<div align="center">
+  <img src="images/ai-learning-path-overview.svg" alt="AI Learning Path Overview" width="100%">
+</div>
 ```
 
 #### Slide 2: Meet Your Expert Trainer
@@ -75,7 +77,9 @@
 ```markdown
 # 📚 8-Session Comprehensive Curriculum
 
-![AI Learning Path Overview](./images/ai-learning-path-overview.svg)
+<div align="center">
+  <img src="images/ai-learning-path-overview.svg" alt="AI Learning Path Overview" width="100%">
+</div>
 
 ## Learning Progression:
 1. **Foundation** → Python & AI fundamentals
@@ -98,7 +102,9 @@
 ```markdown
 # 🐍 Session 1: Python Fundamentals
 
-![Python Fundamentals](./images/python-fundamentals-diagram.svg)
+<div align="center">
+  <img src="images/python-fundamentals-diagram.svg" alt="Python Fundamentals Architecture" width="100%">
+</div>
 
 ## Session Goals:
 - **Master Python Core** - Variables, functions, classes, OOP
@@ -275,7 +281,9 @@ Artificial Intelligence (AI)
 ```markdown
 # 🔍 Session 6: Retrieval-Augmented Generation (RAG)
 
-![RAG Architecture](./images/rag-architecture-diagram.svg)
+<div align="center">
+  <img src="images/rag-architecture-diagram.svg" alt="RAG Architecture Diagram" width="100%">
+</div>
 
 ## What is RAG?
 **Retrieval-Augmented Generation** combines the power of:
@@ -350,7 +358,9 @@ response = qa_chain.run("What is our company's vacation policy?")
 ```markdown
 # 🤖 Session 7: AI Agents & Multi-Agent Systems
 
-![AI Agents Architecture](./images/ai-agents-architecture.svg)
+<div align="center">
+  <img src="images/ai-agents-architecture.svg" alt="AI Agents Architecture" width="100%">
+</div>
 
 ## What Makes an AI Agent?
 - **Autonomy** - Independent decision making

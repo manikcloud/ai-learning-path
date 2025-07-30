@@ -1,6 +1,8 @@
 # 🤖 AI Learning Path - Complete Training Program
 
-![AI Learning Path Overview](./images/ai-learning-path-overview.svg)
+<div align="center">
+  <img src="images/ai-learning-path-overview.svg" alt="AI Learning Path Overview" width="100%">
+</div>
 
 ## 🎯 About This Program
 
@@ -17,7 +19,9 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 ### 🐍 Session 1: Python Fundamentals (Hands-on)
 **Duration**: 8-10 hours | **Type**: Practical Workshop
 
-![Python Fundamentals](./images/python-fundamentals-diagram.svg)
+<div align="center">
+  <img src="images/python-fundamentals-diagram.svg" alt="Python Fundamentals Architecture" width="100%">
+</div>
 
 #### What You'll Master:
 - **Python Fundamentals**
@@ -205,7 +209,9 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 ### 🔍 Session 6: RAG (Retrieval-Augmented Generation) (Theory + Hands-on)
 **Duration**: 10-12 hours | **Type**: Advanced Implementation
 
-![RAG Architecture](./images/rag-architecture-diagram.svg)
+<div align="center">
+  <img src="images/rag-architecture-diagram.svg" alt="RAG Architecture Diagram" width="100%">
+</div>
 
 #### RAG Architecture Deep Dive:
 - **How RAG Works**
@@ -249,7 +255,9 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 ### 🤖 Session 7: Agents (Theory + Hands-on)
 **Duration**: 15-18 hours | **Type**: Advanced AI Development
 
-![AI Agents Architecture](./images/ai-agents-architecture.svg)
+<div align="center">
+  <img src="images/ai-agents-architecture.svg" alt="AI Agents Architecture" width="100%">
+</div>
 
 #### Agentic AI Fundamentals:
 - **What is Agentic AI?**
