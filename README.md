@@ -6,13 +6,15 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 
 ### 👨‍🏫 Your Trainer
 **Expert**: Varun Kumar - AI Expert & AWS Ambassador  
-**Philosophy**: Learn by doing, build real projects, understand concepts deeply  
+**Philosophy**: Learn by doing, build real projects, understand concepts deeply
 
 ---
 
-## 📚 Complete Curriculum Overview
+## 📚 Complete Curriculum Index
 
-### 🐍 Session 1: Python Fundamentals (Hands-on)
+<details>
+<summary>🐍 <strong>Session 1: Python Fundamentals (Hands-on)</strong></summary>
+
 **Duration**: 8-10 hours | **Type**: Practical Workshop
 
 #### What You'll Master:
@@ -40,9 +42,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 2. **API Integration Project**: Create a weather data aggregator
 3. **Basic ML Model**: Implement a simple prediction system
 
----
+</details>
 
-### 🧠 Session 2: AI/ML/NLP Fundamental Awareness (Theory)
+<details>
+<summary>🧠 <strong>Session 2: AI/ML/NLP Fundamental Awareness (Theory)</strong></summary>
+
 **Duration**: 6-8 hours | **Type**: Conceptual Deep Dive
 
 #### Core Concepts:
@@ -77,9 +81,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 - Model evaluation case studies
 - Real-world AI application analysis
 
----
+</details>
 
-### ⚙️ Session 3: DevOps Fundamentals (L2) (Theory + Hands-on)
+<details>
+<summary>⚙️ <strong>Session 3: DevOps Fundamentals (L2) (Theory + Hands-on)</strong></summary>
+
 **Duration**: 10-12 hours | **Type**: Mixed Learning
 
 #### DevOps Essentials:
@@ -112,9 +118,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 2. **CI/CD Pipeline**: Build automated deployment pipeline
 3. **Cloud Deployment**: Deploy AI models to cloud platforms
 
----
+</details>
 
-### 💬 Session 4: Prompt Engineering (Theory + Hands-on)
+<details>
+<summary>💬 <strong>Session 4: Prompt Engineering (Theory + Hands-on)</strong></summary>
+
 **Duration**: 8-10 hours | **Type**: Interactive Workshop
 
 #### Advanced Prompting Techniques:
@@ -154,9 +162,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 2. **Domain-Specific Chatbot**: Create specialized AI assistants
 3. **RAG Implementation**: Build knowledge-enhanced AI systems
 
----
+</details>
 
-### 🔧 Session 5: AutoX (API + UI) (Hands-on)
+<details>
+<summary>🔧 <strong>Session 5: AutoX (API + UI) (Hands-on)</strong></summary>
+
 **Duration**: 12-15 hours | **Type**: Full-Stack Development
 
 #### API Development:
@@ -196,9 +206,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 2. **API Marketplace**: Build and deploy multiple AI APIs
 3. **Interactive Dashboard**: Real-time data visualization platform
 
----
+</details>
 
-### 🔍 Session 6: RAG (Retrieval-Augmented Generation) (Theory + Hands-on)
+<details>
+<summary>🔍 <strong>Session 6: RAG (Retrieval-Augmented Generation) (Theory + Hands-on)</strong></summary>
+
 **Duration**: 10-12 hours | **Type**: Advanced Implementation
 
 #### RAG Architecture Deep Dive:
@@ -238,9 +250,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 2. **Knowledge Base Chatbot**: Create domain-specific AI assistant
 3. **Multi-Modal RAG**: Implement text + image retrieval system
 
----
+</details>
 
-### 🤖 Session 7: Agents (Theory + Hands-on)
+<details>
+<summary>🤖 <strong>Session 7: Agents (Theory + Hands-on)</strong></summary>
+
 **Duration**: 15-18 hours | **Type**: Advanced AI Development
 
 #### Agentic AI Fundamentals:
@@ -305,9 +319,11 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 2. **Multi-Agent Simulation**: Create collaborative agent systems
 3. **Enterprise Automation**: Develop business process agents
 
----
+</details>
 
-### 🔗 Session 8: MCP (Model Context Protocol) (Theory + Hands-on)
+<details>
+<summary>🔗 <strong>Session 8: MCP (Model Context Protocol) (Theory + Hands-on)</strong></summary>
+
 **Duration**: 8-10 hours | **Type**: Cutting-Edge Technology
 
 #### MCP Fundamentals:
@@ -340,6 +356,8 @@ Welcome to the **AI Learning Path** - a comprehensive training program designed 
 1. **MCP-Enabled AI System**: Build protocol-compliant AI applications
 2. **Cross-Model Context Transfer**: Implement context sharing between different AI models
 3. **Enterprise MCP Infrastructure**: Design scalable MCP deployment
+
+</details>
 
 ---
 
