@@ -36,6 +36,7 @@ curl http://localhost:11434/api/tags
 Open your browser and go to: http://localhost:11434/api/tags
 You should see a JSON response with your models
 ```
+<img width="638" height="988" alt="image" src="https://github.com/user-attachments/assets/21b527bc-20d5-4311-8043-92f60eb5473d" />
 
 **Test Your Models:**
 ```bash
@@ -46,6 +47,8 @@ curl -X POST http://localhost:11434/api/generate \
 ```
 
 **That's it!** If the commands above return responses, you're ready to start the MCP session.
+
+
 
 ## 📊 The Three-Step Learning Experience
 
