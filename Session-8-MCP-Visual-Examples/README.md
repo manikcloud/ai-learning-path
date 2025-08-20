@@ -4,6 +4,26 @@
 
 This session demonstrates the **dramatic transformation** when using MCP to coordinate multiple AI models. You'll experience the "before and after" effect that makes MCP invaluable.
 
+## 📋 Prerequisites - Quick Check
+
+### ✅ **Verify Your System is Ready**
+
+**Check Ollama is Running:**
+```bash
+# Check if Ollama service is running
+curl http://localhost:11434/api/tags
+```
+
+**Test Your Models:**
+```bash
+# Test any available model (replace with your model name)
+curl -X POST http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"model": "codellama:latest", "prompt": "Hello", "stream": false}'
+```
+
+**That's it!** If the commands above return responses, you're ready to start the MCP session.
+
 ## 📊 The Three-Step Learning Experience
 
 ### Step 1: BEFORE MCP (The Painful Way)
