@@ -6,19 +6,17 @@ This session takes you through a **complete step-by-step journey** to understand
 
 ## 📚 **Navigation & Quick Links**
 
-### **📋 Setup & Prerequisites**
-- **[Complete Prerequisites Guide](PREREQUISITES.md)** - Docker, Ollama setup with troubleshooting
-
-### **🛠️ Hands-On Practice**
-- **[Working Demo Files](hands-on/json-mcp/)** - All practical exercises and tools
-  - [`smart_chat.py`](hands-on/json-mcp/smart_chat.py) - CLI script with intelligent routing
-  - [`smart-mcp.json`](hands-on/json-mcp/smart-mcp.json) - MCP routing configuration
-  - **[Hands-on README](hands-on/json-mcp/README.md)** - Detailed technical instructions
+### **🛠️ Complete Setup & Hands-On Practice**
+- **[Complete Setup & Demo Guide](hands-on/json-mcp/README.md)** - Everything you need: Docker setup, Ollama installation, and hands-on exercises
+  - Prerequisites setup (Docker + Ollama)
+  - Working demo files and instructions
+  - Before/after demonstrations
+  - Troubleshooting and customization
 
 ### **🎯 Learning Path**
-1. **Setup** → Use [Prerequisites Guide](PREREQUISITES.md)
+1. **Setup & Practice** → Use [Complete Setup & Demo Guide](hands-on/json-mcp/README.md)
 2. **Experience Problem** → See manual model selection failures below
-3. **Experience Solution** → Try the [smart chat demo](hands-on/json-mcp/)
+3. **Experience Solution** → Try the smart chat demo
 4. **Understand Intelligence** → Learn how MCP routing works
 5. **Real-World Application** → See production system mapping
 
@@ -26,19 +24,18 @@ This session takes you through a **complete step-by-step journey** to understand
 
 ## 📋 Quick Setup Check
 
-**Verify Ollama is Running:**
-```bash
-curl http://localhost:11434/api/tags
-```
+**Need complete setup?** → **[Go to Complete Setup & Demo Guide](hands-on/json-mcp/README.md)**
 
-**Test a Model:**
+**Already set up? Quick verification:**
 ```bash
+# Check Ollama is running
+curl http://localhost:11434/api/tags
+
+# Test a model
 curl -X POST http://localhost:11434/api/generate \
   -H "Content-Type: application/json" \
   -d '{"model": "phi-fast:latest", "prompt": "Hello", "stream": false}'
 ```
-
-**Need full setup?** → **[Go to Prerequisites Guide](PREREQUISITES.md)**
 
 ---
 
@@ -238,31 +235,28 @@ graph TD
 
 ## 🛠️ **Hands-On Practice: Experience It Yourself**
 
-### **📁 Working Files Location**
-All hands-on files are in: **[`hands-on/json-mcp/`](hands-on/json-mcp/)**
+### **📁 Complete Guide Location**
+Everything you need is in: **[Complete Setup & Demo Guide](hands-on/json-mcp/README.md)**
 
-### **Exercise 1: Test Different Question Types**
+### **Quick Exercise Overview**
 
 **Travel Question (should route to phi-fast:latest):**
 ```bash
 cd hands-on/json-mcp/
 python3 smart_chat.py "What's the best time to visit Paris?"
 ```
-**Expected:** MCP selects phi-fast:latest, gets travel advice
 
 **Coding Question (should route to deepseek-coder-fast:latest):**
 ```bash
 python3 smart_chat.py "Write a Python function to sort a list"
 ```
-**Expected:** MCP selects deepseek-coder-fast:latest, gets code solution
 
 **General Question (should route to mistral:latest):**
 ```bash
 python3 smart_chat.py "Explain what machine learning is"
 ```
-**Expected:** MCP selects mistral:latest, gets educational explanation
 
-### **Exercise 2: Experience Before vs After Manually**
+### **Experience Before vs After**
 ```bash
 # First, try the wrong model (manual selection)
 curl -X POST http://localhost:11434/api/generate \
@@ -271,21 +265,11 @@ curl -X POST http://localhost:11434/api/generate \
 # Expected: ❌ Refusal message
 
 # Then, use MCP smart selection
-cd hands-on/json-mcp/
 python3 smart_chat.py "Plan a trip to Paris"
 # Expected: ✅ Helpful travel response
 ```
-**Expected:** Experience the dramatic difference between manual guessing and MCP intelligence
 
-### **Exercise 3: Understand the Configuration**
-```bash
-# Examine the routing rules
-cd hands-on/json-mcp/
-cat smart-mcp.json
-```
-**Expected:** See the JSON configuration that drives smart routing
-
-**📖 Detailed hands-on instructions:** **[View hands-on README](hands-on/json-mcp/README.md)**
+**📖 Complete setup, troubleshooting, and detailed instructions:** **[Complete Setup & Demo Guide](hands-on/json-mcp/README.md)**
 
 ---
 
