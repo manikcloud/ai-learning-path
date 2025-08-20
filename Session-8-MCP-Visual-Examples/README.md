@@ -419,6 +419,39 @@ Story Analysis: Robot + Cooking = Creative + Technical
 | **Learning Value** | Fragmented | Integrated | 🧠 Better understanding |
 | **Error Rate** | High (manual steps) | Low (automated) | ✅ More reliable |
 
+---
+
+## 🛠️ **STEP 4: CREATE JSON MCP CONFIGURATION** 📄
+
+**Build Your Model Coordinator:**
+
+Instead of manual model calls, create a simple JSON configuration that routes questions to the right models automatically.
+
+**What you'll create:**
+- Simple JSON file that defines your 3 models
+- Smart routing rules for different question types  
+- Easy configuration without any programming
+
+**How it works:**
+1. **Question Analysis** - MCP reads your question
+2. **Smart Routing** - JSON rules decide which model to use
+3. **Automatic Response** - Right model answers automatically
+
+**Files you'll work with:**
+- `mcp-config.json` - Your model configuration
+- `model-routing.json` - Smart routing rules
+
+**Time needed:** 10 minutes setup + testing
+
+**What you'll experience:**
+- Same question from Step 1 (manual) → Now automatic via JSON config
+- See how configuration eliminates manual model selection
+- Understand MCP's routing capabilities
+
+**Next:** Use the JSON files in the `hands-on/json-mcp/` folder and follow the setup instructions.
+
+---
+
 ## 🚀 **Ready to Experience the Magic?**
 
 Choose your learning path:
