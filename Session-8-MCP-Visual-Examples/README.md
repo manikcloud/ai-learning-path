@@ -14,7 +14,6 @@ This session takes you through a **complete step-by-step journey** to understand
 - **[Working Demo Files](hands-on/json-mcp/)** - All practical exercises and tools
   - [`smart_chat.py`](hands-on/json-mcp/smart_chat.py) - CLI script with intelligent routing
   - [`smart-mcp.json`](hands-on/json-mcp/smart-mcp.json) - MCP routing configuration
-  - [`demo-comparison.sh`](hands-on/json-mcp/demo-comparison.sh) - Before/after demonstration
   - **[Hands-on README](hands-on/json-mcp/README.md)** - Detailed technical instructions
 
 ### **🎯 Learning Path**
@@ -264,13 +263,20 @@ python3 smart_chat.py "Explain what machine learning is"
 ```
 **Expected:** MCP selects mistral:latest, gets educational explanation
 
-### **Exercise 2: Compare Before vs After**
+### **Exercise 2: Experience Before vs After Manually**
 ```bash
-# Run the complete demonstration
+# First, try the wrong model (manual selection)
+curl -X POST http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"model": "deepseek-coder-fast:latest", "prompt": "Plan a trip to Paris", "stream": false}'
+# Expected: ❌ Refusal message
+
+# Then, use MCP smart selection
 cd hands-on/json-mcp/
-./demo-comparison.sh
+python3 smart_chat.py "Plan a trip to Paris"
+# Expected: ✅ Helpful travel response
 ```
-**Expected:** See side-by-side comparison of manual vs MCP approaches
+**Expected:** Experience the dramatic difference between manual guessing and MCP intelligence
 
 ### **Exercise 3: Understand the Configuration**
 ```bash

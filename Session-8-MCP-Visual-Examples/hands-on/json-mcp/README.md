@@ -8,7 +8,6 @@ A simple JSON-based MCP configuration that automatically routes questions to the
 
 - **`smart-mcp.json`** - MCP routing configuration with smart model selection rules
 - **`smart_chat.py`** - CLI script that demonstrates automatic model routing
-- **`demo-comparison.sh`** - Before/After demonstration script
 - **`mcp`** - Simple MCP command wrapper
 
 ## 🚀 How to Use
@@ -34,10 +33,17 @@ python3 smart_chat.py "What's the best time to visit Paris?"
 python3 smart_chat.py "Write a Python function to sort a list"
 ```
 
-### Step 3: Run Before/After Demo
+### **Step 3: Experience the Before vs After Transformation**
 ```bash
-# See the complete transformation
-./demo-comparison.sh
+# First: Try manual model selection (the problem)
+curl -X POST http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"model": "deepseek-coder-fast:latest", "prompt": "Plan a trip to Paris", "stream": false}'
+# Result: ❌ Model refuses with "not suitable for travel itineraries"
+
+# Then: Use MCP smart selection (the solution)  
+python3 smart_chat.py "Plan a trip to Paris"
+# Result: ✅ Helpful travel planning response
 ```
 
 ## 🎯 Understanding the Magic
