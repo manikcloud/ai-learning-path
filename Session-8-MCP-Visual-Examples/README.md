@@ -175,7 +175,58 @@ After completing this session, you'll understand:
 
 ---
 
-## 🚀 **Ready to Experience the Magic?**
+## 🔄 **MCP System Flow Diagram**
+
+### **The Complete Before vs After Transformation**
+
+```mermaid
+graph TD
+    A[👤 Student Question<br/>'Plan a trip to Paris'] --> B{MCP Enabled?}
+    
+    %% Before MCP Path
+    B -->|❌ NO - Manual| C[😰 Student Guesses Model]
+    C --> D[🎲 Tries: deepseek-coder-fast]
+    D --> E[🚫 Model Refuses<br/>'Not suitable for travel']
+    E --> F[😤 Frustrated Student]
+    F --> C
+    
+    %% After MCP Path  
+    B -->|✅ YES - Smart| G[🧠 MCP Analyzes Keywords]
+    G --> H[📋 Checks JSON Config]
+    H --> I[🎯 Selects: phi-fast:latest]
+    I --> J[🌐 Calls Ollama API]
+    J --> K[✅ Helpful Travel Response]
+    K --> L[😊 Happy Learning Student]
+    
+    %% Styling
+    classDef problem fill:#ffebee,stroke:#f44336,stroke-width:2px
+    classDef solution fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    classDef success fill:#f1f8e9,stroke:#8bc34a,stroke-width:3px
+    
+    class C,D,E,F problem
+    class G,H,I,J solution
+    class K,L success
+```
+
+### **Smart Model Selection Logic**
+
+```mermaid
+graph LR
+    A[Question Input] --> B{Keyword Analysis}
+    
+    B -->|travel, trip, visit| C[🗺️ phi-fast:latest<br/>Travel Friendly]
+    B -->|function, code, debug| D[💻 deepseek-coder-fast<br/>Programming Expert]  
+    B -->|explain, what is| E[🎓 mistral:latest<br/>Educational]
+    
+    C --> F[✅ Always Helpful Response]
+    D --> F
+    E --> F
+    
+    classDef models fill:#e3f2fd,stroke:#2196f3,stroke-width:2px
+    class C,D,E models
+```
+
+---
 
 Choose your learning path:
 
