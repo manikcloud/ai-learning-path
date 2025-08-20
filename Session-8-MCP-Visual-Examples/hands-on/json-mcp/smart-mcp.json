@@ -1,0 +1,48 @@
+{
+  "mcp_routing": {
+    "question_analysis": {
+      "input": "Plan a 3-day trip to Paris for a family with kids",
+      "detected_keywords": ["plan", "trip", "family", "kids"],
+      "question_type": "travel_planning",
+      "avoid_models": ["deepseek-coder-fast:latest"],
+      "reason": "Coding models refuse non-technical questions"
+    },
+    "smart_selection": {
+      "best_model": "phi-fast:latest",
+      "why": "General purpose model that handles travel questions well",
+      "backup_model": "mistral:latest",
+      "avoid": "deepseek-coder-fast:latest (coding specialist)"
+    },
+    "routing_rules": {
+      "travel_questions": {
+        "keywords": ["trip", "travel", "plan", "visit", "vacation"],
+        "use_model": "phi-fast:latest",
+        "avoid_model": "deepseek-coder-fast:latest"
+      },
+      "coding_questions": {
+        "keywords": ["function", "code", "programming", "debug"],
+        "use_model": "deepseek-coder-fast:latest",
+        "avoid_model": "phi-fast:latest"
+      },
+      "general_questions": {
+        "keywords": ["explain", "what is", "how to"],
+        "use_model": "mistral:latest",
+        "avoid_model": "deepseek-coder-fast:latest"
+      }
+    }
+  },
+  "demonstration": {
+    "wrong_way": {
+      "command": "curl -X POST http://localhost:11434/api/generate -d '{\"model\": \"deepseek-coder-fast:latest\", \"prompt\": \"Plan a 3-day trip to Paris for a family with kids\"}'",
+      "result": "❌ REFUSED - Wrong model for travel questions"
+    },
+    "mcp_way": {
+      "step1": "MCP analyzes question: 'Plan a 3-day trip...'",
+      "step2": "MCP detects keywords: ['plan', 'trip', 'family']",
+      "step3": "MCP selects: phi-fast:latest (good for travel)",
+      "step4": "MCP avoids: deepseek-coder-fast:latest (coding only)",
+      "command": "curl -X POST http://localhost:11434/api/generate -d '{\"model\": \"phi-fast:latest\", \"prompt\": \"Plan a 3-day trip to Paris for a family with kids\"}'",
+      "result": "✅ SUCCESS - Right model, helpful response"
+    }
+  }
+}
