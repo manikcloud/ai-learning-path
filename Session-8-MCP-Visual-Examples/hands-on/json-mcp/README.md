@@ -6,66 +6,78 @@ A simple JSON-based MCP configuration that automatically routes questions to the
 
 ## 📁 Files Overview
 
-- **`mcp-config.json`** - Defines your 3 models and available tools
-- **`model-routing.json`** - Smart routing rules for automatic model selection
+- **`smart-mcp.json`** - MCP routing configuration with smart model selection rules
+- **`smart_chat.py`** - CLI script that demonstrates automatic model routing
+- **`demo-comparison.sh`** - Before/After demonstration script
+- **`mcp`** - Simple MCP command wrapper
 
 ## 🚀 How to Use
 
 ### Step 1: Review the Configuration
 ```bash
-# Look at your model setup
-cat mcp-config.json
+# Look at your MCP routing setup
+cat smart-mcp.json
 
-# Check the routing rules  
-cat model-routing.json
+# Check the smart chat script
+cat smart_chat.py
 ```
 
-### Step 2: Test the Routing Logic
+### Step 2: Test Smart Model Selection
 
-**Example Questions and Expected Routing:**
-
-| Question | Detected Keywords | Selected Model | Why |
-|----------|------------------|----------------|-----|
-| "Write a Python function" | `function` | `code_expert` (codellama) | Code generation needed |
-| "Explain recursion" | `explain` | `concept_expert` (deepseek-coder) | Concept explanation needed |
-| "Best practices for functions" | `best practices` | `practice_expert` (mistral) | Guidelines and advice needed |
-| "Complete Python tutorial" | `complete`, `tutorial` | `ask_all_experts` (all 3) | Comprehensive coverage needed |
-
-### Step 3: Understanding the Magic
-
-**Before JSON MCP:**
+**Travel Question (should select phi-fast:latest):**
 ```bash
-# Manual process (3 separate commands)
-curl -X POST http://localhost:11434/api/generate -d '{"model": "deepseek-coder:latest", "prompt": "Explain functions"}'
-curl -X POST http://localhost:11434/api/generate -d '{"model": "codellama:latest", "prompt": "Show function examples"}'  
-curl -X POST http://localhost:11434/api/generate -d '{"model": "mistral:latest", "prompt": "Function best practices"}'
+python3 smart_chat.py "What's the best time to visit Paris?"
 ```
 
-**After JSON MCP:**
+**Coding Question (should select deepseek-coder-fast:latest):**
+```bash
+python3 smart_chat.py "Write a Python function to sort a list"
 ```
-User: "Explain Python functions with examples and best practices"
-MCP: *reads routing rules* → *detects comprehensive question* → *uses ask_all_experts* → *coordinates all 3 models automatically*
+
+### Step 3: Run Before/After Demo
+```bash
+# See the complete transformation
+./demo-comparison.sh
 ```
+
+## 🎯 Understanding the Magic
+
+**Before MCP (Manual Selection):**
+```bash
+# Student manually tries different models - often gets wrong results
+curl -X POST http://localhost:11434/api/generate \
+  -d '{"model": "deepseek-coder-fast:latest", "prompt": "Plan a trip to Paris"}'
+# Result: ❌ "I'm sorry... not suitable for travel itineraries"
+```
+
+**After MCP (Smart Selection):**
+```bash
+# MCP automatically analyzes and selects the right model
+python3 smart_chat.py "Plan a trip to Paris"
+# Result: ✅ Helpful travel planning response
+```
+
+## 🧠 How Smart Routing Works
+
+The `smart-mcp.json` file contains routing rules:
+
+| Question Type | Keywords | Selected Model | Why |
+|---------------|----------|----------------|-----|
+| **Travel** | trip, travel, visit, vacation | phi-fast:latest | General model good for travel |
+| **Coding** | function, code, programming | deepseek-coder-fast:latest | Specialized coding model |
+| **General** | explain, what is, how to | mistral:latest | Good for explanations |
 
 ## 🎨 Customization
 
 ### Add New Routing Rules
-Edit `model-routing.json` to add new question types:
+Edit `smart-mcp.json` to add new question types:
 
 ```json
-{
-  "name": "debugging_questions",
-  "keywords": ["error", "bug", "fix", "debug", "not working"],
-  "targetModel": "code_expert",
-  "confidence": 0.9
+"new_question_type": {
+  "keywords": ["your", "custom", "keywords"],
+  "use_model": "your-preferred-model:latest",
+  "avoid_model": "model-to-avoid:latest"
 }
-```
-
-### Modify Model Assignments
-Edit `mcp-config.json` to change which model handles what:
-
-```json
-"specialties": ["your", "custom", "keywords"]
 ```
 
 ## 🧪 Testing Your Setup
@@ -77,27 +89,35 @@ Edit `mcp-config.json` to change which model handles what:
 
 2. **Test Individual Models:**
    ```bash
-   # Test deepseek-coder
-   curl -X POST http://localhost:11434/api/generate -d '{"model": "deepseek-coder:latest", "prompt": "Hello", "stream": false}'
+   # Test phi-fast
+   curl -X POST http://localhost:11434/api/generate \
+     -d '{"model": "phi-fast:latest", "prompt": "Hello", "stream": false}'
    
-   # Test codellama  
-   curl -X POST http://localhost:11434/api/generate -d '{"model": "codellama:latest", "prompt": "Hello", "stream": false}'
-   
-   # Test mistral
-   curl -X POST http://localhost:11434/api/generate -d '{"model": "mistral:latest", "prompt": "Hello", "stream": false}'
+   # Test deepseek-coder-fast
+   curl -X POST http://localhost:11434/api/generate \
+     -d '{"model": "deepseek-coder-fast:latest", "prompt": "Hello", "stream": false}'
+   ```
+
+3. **Test Smart Routing:**
+   ```bash
+   # Different question types should route to different models
+   python3 smart_chat.py "Plan a vacation"        # → phi-fast
+   python3 smart_chat.py "Write a function"       # → deepseek-coder-fast
+   python3 smart_chat.py "Explain recursion"      # → mistral
    ```
 
 ## 🎯 What You've Learned
 
-- **Model Specialization:** Each model has specific strengths
-- **Smart Routing:** Keywords automatically select the right model
-- **Configuration Over Code:** JSON rules eliminate manual model selection
-- **MCP Coordination:** How MCP orchestrates multiple models seamlessly
+- **Model Specialization:** Each model has specific strengths and weaknesses
+- **Smart Routing:** Keywords automatically select the appropriate model
+- **MCP Value:** Eliminates manual model selection and wrong choices
+- **Automatic Coordination:** One question, right model, helpful response
 
 ## 🔗 Next Steps
 
-- Try different question types and see which models get selected
-- Modify the routing rules to match your specific needs
-- Experiment with combining multiple models for complex questions
+- Try different question types and observe model selection
+- Modify routing rules to match your specific needs
+- Experiment with new models and routing strategies
+- Experience the transformation from manual guessing to intelligent automation
 
-**You've just configured your first MCP system! 🎉**
+**You've successfully built and tested an MCP-inspired smart routing system!** 🎉
