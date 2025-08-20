@@ -8,7 +8,6 @@ A simple JSON-based MCP configuration that automatically routes questions to the
 
 - **`smart-mcp.json`** - MCP routing configuration with smart model selection rules
 - **`smart_chat.py`** - CLI script that demonstrates automatic model routing
-- **`mcp`** - Simple MCP command wrapper
 
 ## 🚀 How to Use
 
