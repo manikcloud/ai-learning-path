@@ -18,10 +18,26 @@ docker run -d \
   ollama/ollama
 
 # Download models inside container
+docker exec -it ollama ollama pull deepseek-coder:latest
 docker exec -it ollama ollama pull codellama:latest
 docker exec -it ollama ollama pull mistral:latest
-docker exec -it ollama ollama pull deepseek-coder:latest
+docker exec -it ollama ollama pull phi-fast:latest
+docker exec -it ollama ollama pull deepseek-coder:6.7b
+docker exec -it ollama ollama pull phi:latest
+docker exec -it ollama ollama pull deepseek-coder-fast:latest
 ```
+
+### 📊 **Available Models**
+
+| Model Name | Description | Best For |
+|------------|-------------|----------|
+| **deepseek-coder:latest** | Advanced code generation model | Complex programming tasks, code review |
+| **codellama:latest** | Meta's code-focused LLaMA model | Code generation, debugging, explanations |
+| **mistral:latest** | General purpose conversational model | General questions, explanations, chat |
+| **phi-fast:latest** | Microsoft's fast, efficient model | Quick responses, lightweight tasks |
+| **deepseek-coder:6.7b** | Larger DeepSeek coding model | Advanced coding, architecture design |
+| **phi:latest** | Microsoft's Phi model | Reasoning, problem solving |
+| **deepseek-coder-fast:latest** | Fast version of DeepSeek coder | Quick code suggestions, snippets |
 
 ### ✅ **Verify Your System is Ready**
 
