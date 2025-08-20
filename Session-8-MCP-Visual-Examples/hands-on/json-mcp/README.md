@@ -490,6 +490,7 @@ curl -X POST http://localhost:11434/api/generate \
 **What this checks:** Complete pipeline from API request to model response
 **Expected output:** JSON with "response" field containing model's greeting
 **If fails:** Check model name spelling and container resources
+<img width="638" height="988" alt="image" src="https://github.com/user-attachments/assets/06001758-641a-44e5-8468-18f469da74d5" />
 
 **✅ Success Criteria:** All 5 commands return successful responses without errors
 
