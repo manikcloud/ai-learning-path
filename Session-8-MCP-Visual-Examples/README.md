@@ -4,29 +4,43 @@
 
 This session takes you through a **complete step-by-step journey** to understand why MCP (Model Context Protocol) is essential for modern AI applications. You'll experience the dramatic transformation from manual model guessing to intelligent coordination.
 
-## 📋 Prerequisites - System Setup
+## 📚 **Navigation & Quick Links**
 
-### **Step 1: Verify Ollama is Running**
+### **📋 Setup & Prerequisites**
+- **[Complete Prerequisites Guide](PREREQUISITES.md)** - Docker, Ollama, Python setup with troubleshooting
+- **[System Verification Script](verify-setup.sh)** - Automated check if you're ready
+
+### **🛠️ Hands-On Practice**
+- **[Working Demo Files](hands-on/json-mcp/)** - All practical exercises and tools
+  - [`smart_chat.py`](hands-on/json-mcp/smart_chat.py) - CLI script with intelligent routing
+  - [`smart-mcp.json`](hands-on/json-mcp/smart-mcp.json) - MCP routing configuration
+  - [`demo-comparison.sh`](hands-on/json-mcp/demo-comparison.sh) - Before/after demonstration
+  - **[Hands-on README](hands-on/json-mcp/README.md)** - Detailed technical instructions
+
+### **🎯 Learning Path**
+1. **Setup** → Use [Prerequisites Guide](PREREQUISITES.md) or run [verify-setup.sh](verify-setup.sh)
+2. **Experience Problem** → See manual model selection failures below
+3. **Experience Solution** → Try the [smart chat demo](hands-on/json-mcp/)
+4. **Understand Intelligence** → Learn how MCP routing works
+5. **Real-World Application** → See production system mapping
+
+---
+
+## 📋 Quick Setup Check
+
+**Verify Ollama is Running:**
 ```bash
-# Check if Ollama service is running
 curl http://localhost:11434/api/tags
 ```
-**Expected:** JSON response showing available models
 
-### **Step 2: Test Basic Model Access**
+**Test a Model:**
 ```bash
-# Test any available model
 curl -X POST http://localhost:11434/api/generate \
   -H "Content-Type: application/json" \
   -d '{"model": "phi-fast:latest", "prompt": "Hello", "stream": false}'
 ```
-**Expected:** JSON response with model's greeting
 
-### **Step 3: Verify Multiple Models Available**
-You should have these models for the demo:
-- **phi-fast:latest** - General purpose, good for travel/general questions
-- **deepseek-coder-fast:latest** - Programming specialist, refuses non-coding questions
-- **mistral:latest** - Educational explanations
+**Need full setup?** → **[Go to Prerequisites Guide](PREREQUISITES.md)**
 
 ---
 
@@ -226,6 +240,9 @@ graph TD
 
 ## 🛠️ **Hands-On Practice: Experience It Yourself**
 
+### **📁 Working Files Location**
+All hands-on files are in: **[`hands-on/json-mcp/`](hands-on/json-mcp/)**
+
 ### **Exercise 1: Test Different Question Types**
 
 **Travel Question (should route to phi-fast:latest):**
@@ -250,6 +267,7 @@ python3 smart_chat.py "Explain what machine learning is"
 ### **Exercise 2: Compare Before vs After**
 ```bash
 # Run the complete demonstration
+cd hands-on/json-mcp/
 ./demo-comparison.sh
 ```
 **Expected:** See side-by-side comparison of manual vs MCP approaches
@@ -257,9 +275,12 @@ python3 smart_chat.py "Explain what machine learning is"
 ### **Exercise 3: Understand the Configuration**
 ```bash
 # Examine the routing rules
+cd hands-on/json-mcp/
 cat smart-mcp.json
 ```
 **Expected:** See the JSON configuration that drives smart routing
+
+**📖 Detailed hands-on instructions:** **[View hands-on README](hands-on/json-mcp/README.md)**
 
 ---
 
