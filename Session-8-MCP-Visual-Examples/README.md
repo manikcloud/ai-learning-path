@@ -14,6 +14,12 @@ This session demonstrates the **dramatic transformation** when using MCP to coor
 curl http://localhost:11434/api/tags
 ```
 
+**Or Test via Browser:**
+```
+Open your browser and go to: http://localhost:11434/api/tags
+You should see a JSON response with your models
+```
+
 **Test Your Models:**
 ```bash
 # Test any available model (replace with your model name)
