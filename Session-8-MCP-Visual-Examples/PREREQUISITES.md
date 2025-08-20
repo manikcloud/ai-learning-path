@@ -1,10 +1,10 @@
 # 📋 Prerequisites Setup Guide for MCP Session
 
-## 🎯 Complete Setup Checklist
+## 🎯 Simple Setup Checklist
 
-Follow this guide step-by-step to ensure your system is ready for the MCP learning session.
+Follow this guide to get your system ready for the MCP learning session.
 
-## 🐳 Docker Installation & Configuration
+## 🐳 Docker Installation
 
 ### Ubuntu/Debian Systems:
 ```bash
@@ -26,7 +26,6 @@ newgrp docker
 
 # Verify Docker installation
 docker --version
-docker-compose --version
 docker run hello-world
 ```
 
@@ -50,72 +49,30 @@ docker run hello-world
 
 ### macOS:
 ```bash
-# Option 1: Download Docker Desktop
-# Visit: https://docs.docker.com/desktop/mac/install/
-
-# Option 2: Using Homebrew
+# Download Docker Desktop from: https://docs.docker.com/desktop/mac/install/
+# Or using Homebrew:
 brew install --cask docker
 
 # Start Docker Desktop application
 # Verify in terminal:
 docker --version
-docker-compose --version
 ```
 
 ### Windows:
 ```bash
-# Option 1: Download Docker Desktop
-# Visit: https://docs.docker.com/desktop/windows/install/
-
-# Option 2: Using Chocolatey
+# Download Docker Desktop from: https://docs.docker.com/desktop/windows/install/
+# Or using Chocolatey:
 choco install docker-desktop
-
-# Option 3: Using winget
-winget install Docker.DockerDesktop
 
 # Verify in PowerShell/CMD:
 docker --version
-docker-compose --version
 ```
 
-## 🤖 Ollama Installation & Setup
+## 🤖 Ollama Setup (Docker Method)
 
-### Method 1: Direct Installation (Recommended)
-
-**Linux & macOS:**
+### Run Ollama in Docker Container:
 ```bash
-# Install Ollama
-curl -fsSL https://ollama.ai/install.sh | sh
-
-# Start Ollama service (runs in background)
-ollama serve &
-
-# Verify installation
-ollama --version
-curl http://localhost:11434/api/tags
-```
-
-**Windows:**
-```bash
-# Download installer from: https://ollama.ai/download/windows
-# Or use package managers:
-
-# Using winget:
-winget install Ollama.Ollama
-
-# Using Chocolatey:
-choco install ollama
-
-# Verify installation:
-ollama --version
-```
-
-### Method 2: Docker Installation (Alternative)
-```bash
-# Pull Ollama Docker image
-docker pull ollama/ollama:latest
-
-# Run Ollama in Docker
+# Pull and run Ollama Docker container
 docker run -d \
   --name ollama \
   -p 11434:11434 \
@@ -129,77 +86,36 @@ curl http://localhost:11434/api/tags
 
 ## 📥 Download Required AI Models
 
-### Download Models Locally:
+### Download Models via Docker:
 ```bash
-# Download lightweight general-purpose model (2GB)
-ollama pull llama3.2:3b
-
-# Download code-specialized model (4GB)
-ollama pull codellama:7b-instruct
-
-# Alternative smaller models (if memory constrained):
-# ollama pull llama3.2:1b        # 1GB - very lightweight
-# ollama pull codellama:7b-code  # 3.8GB - smaller code model
+# Download lightweight models for the demo
+docker exec -it ollama ollama pull phi-fast:latest
+docker exec -it ollama ollama pull deepseek-coder-fast:latest
+docker exec -it ollama ollama pull mistral:latest
 
 # Verify models are downloaded
-ollama list
+docker exec -it ollama ollama list
 ```
 
 ### Test Models Are Working:
 ```bash
 # Test general model
-ollama run llama3.2:3b "Hello, can you explain what you do?"
+docker exec -it ollama ollama run phi-fast:latest "Hello, can you help with travel planning?"
 
 # Test code model
-ollama run codellama:7b-instruct "Write a simple Python hello world function"
+docker exec -it ollama ollama run deepseek-coder-fast:latest "Write a simple Python function"
 
 # Quick API test
 curl -X POST http://localhost:11434/api/generate \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "llama3.2:3b",
+    "model": "phi-fast:latest",
     "prompt": "Say hello",
     "stream": false
   }'
 ```
 
-## 🐍 Python Environment Setup
-
-### Install Python (if not already installed):
-```bash
-# Ubuntu/Debian:
-sudo apt install -y python3 python3-pip python3-venv
-
-# CentOS/RHEL/Fedora:
-sudo dnf install -y python3 python3-pip
-
-# macOS (using Homebrew):
-brew install python3
-
-# Windows: Download from python.org or use:
-winget install Python.Python.3.11
-```
-
-### Create Virtual Environment:
-```bash
-# Create virtual environment
-python3 -m venv mcp-learning-env
-
-# Activate virtual environment
-# Linux/macOS:
-source mcp-learning-env/bin/activate
-
-# Windows:
-mcp-learning-env\Scripts\activate
-
-# Upgrade pip
-pip install --upgrade pip
-
-# Install required packages
-pip install mcp httpx asyncio-mqtt pydantic python-dotenv
-```
-
-## ✅ Complete System Verification
+## ✅ System Verification
 
 ### Run This Verification Script:
 ```bash
@@ -220,48 +136,47 @@ else
     echo "❌ Docker not installed"
 fi
 
-# Check Docker Compose
-if command -v docker-compose &> /dev/null; then
-    echo "✅ Docker Compose installed: $(docker-compose --version)"
-else
-    echo "❌ Docker Compose not installed"
-fi
-
-# Check Ollama
+# Check Ollama Container
 echo "🤖 Checking Ollama..."
-if command -v ollama &> /dev/null; then
-    echo "✅ Ollama installed: $(ollama --version)"
+if docker ps | grep -q ollama; then
+    echo "✅ Ollama container is running"
     
-    # Check if Ollama service is running
+    # Check if Ollama service is responding
     if curl -s http://localhost:11434/api/tags &> /dev/null; then
-        echo "✅ Ollama service is running"
+        echo "✅ Ollama service is responding"
         
         # Check models
         echo "📚 Checking models..."
-        if ollama list | grep -q "llama3.2:3b"; then
-            echo "✅ llama3.2:3b model available"
+        if docker exec ollama ollama list | grep -q "phi-fast:latest"; then
+            echo "✅ phi-fast:latest model available"
         else
-            echo "❌ llama3.2:3b model not found - run: ollama pull llama3.2:3b"
+            echo "❌ phi-fast:latest model not found"
         fi
         
-        if ollama list | grep -q "codellama:7b-instruct"; then
-            echo "✅ codellama:7b-instruct model available"
+        if docker exec ollama ollama list | grep -q "deepseek-coder-fast:latest"; then
+            echo "✅ deepseek-coder-fast:latest model available"
         else
-            echo "❌ codellama:7b-instruct model not found - run: ollama pull codellama:7b-instruct"
+            echo "❌ deepseek-coder-fast:latest model not found"
+        fi
+        
+        if docker exec ollama ollama list | grep -q "mistral:latest"; then
+            echo "✅ mistral:latest model available"
+        else
+            echo "❌ mistral:latest model not found"
         fi
     else
-        echo "❌ Ollama service not running - start with: ollama serve"
+        echo "❌ Ollama service not responding"
     fi
 else
-    echo "❌ Ollama not installed"
+    echo "❌ Ollama container not running - start with the docker run command above"
 fi
 
-# Check Python
+# Check Python (basic check - most systems have it)
 echo "🐍 Checking Python..."
 if command -v python3 &> /dev/null; then
-    echo "✅ Python installed: $(python3 --version)"
+    echo "✅ Python3 available: $(python3 --version)"
 else
-    echo "❌ Python3 not installed"
+    echo "⚠️  Python3 not found - install with: sudo apt install python3"
 fi
 
 # Check system resources
@@ -275,10 +190,8 @@ echo "🎯 Prerequisites check complete!"
 
 ### Save and Run Verification:
 ```bash
-# Save the script
-curl -o verify-setup.sh https://raw.githubusercontent.com/manikcloud/ai-learning-path/main/Session-8-MCP-Visual-Examples/verify-setup.sh
-
-# Make executable and run
+# The script is already in the repository
+cd /home/k8s/ai-learning-path/Session-8-MCP-Visual-Examples/
 chmod +x verify-setup.sh
 ./verify-setup.sh
 ```
@@ -300,29 +213,18 @@ sudo lsof -i :11434  # Check what's using port 11434
 
 ### Ollama Issues:
 ```bash
-# Service not starting:
-ollama serve  # Run in foreground to see errors
+# Container not starting:
+docker logs ollama  # Check container logs
 
 # Models not downloading:
-# Check internet connection
-ping ollama.ai
+# Check internet connection and disk space
+docker exec -it ollama ollama pull phi-fast:latest
 
-# Check disk space
-df -h
-
-# Clear cache and retry
-rm -rf ~/.ollama/models/*
-ollama pull llama3.2:3b
-```
-
-### Memory Issues:
-```bash
-# If system has < 8GB RAM, use smaller models:
-ollama pull llama3.2:1b          # 1GB instead of 3GB
-ollama pull codellama:7b-code    # 3.8GB instead of 4GB
-
-# Monitor memory usage:
-htop  # or top on basic systems
+# Clear cache and retry:
+docker stop ollama
+docker rm ollama
+docker volume rm ollama
+# Then run the docker run command again
 ```
 
 ## 📊 Minimum System Requirements
@@ -340,7 +242,7 @@ htop  # or top on basic systems
 Once all items show ✅ in the verification script, you're ready to start the MCP learning session!
 
 **Next Steps:**
-1. Navigate to the main README.md
+1. Navigate to the main [README.md](README.md)
 2. Follow the "Three-Step Learning Experience"
 3. Experience the MCP transformation!
 
