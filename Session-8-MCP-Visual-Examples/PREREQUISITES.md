@@ -115,86 +115,29 @@ curl -X POST http://localhost:11434/api/generate \
   }'
 ```
 
-## ✅ System Verification
+## ✅ Quick Verification
 
-### Run This Verification Script:
+### Simple Verification Commands:
 ```bash
-#!/bin/bash
-echo "🔍 MCP Prerequisites Verification"
-echo "================================="
+# 1. Check Docker is running
+docker ps
 
-# Check Docker
-echo "📦 Checking Docker..."
-if command -v docker &> /dev/null; then
-    echo "✅ Docker installed: $(docker --version)"
-    if docker ps &> /dev/null; then
-        echo "✅ Docker is running"
-    else
-        echo "❌ Docker is not running - start with: sudo systemctl start docker"
-    fi
-else
-    echo "❌ Docker not installed"
-fi
+# 2. Check Ollama container is running  
+docker ps | grep ollama
 
-# Check Ollama Container
-echo "🤖 Checking Ollama..."
-if docker ps | grep -q ollama; then
-    echo "✅ Ollama container is running"
-    
-    # Check if Ollama service is responding
-    if curl -s http://localhost:11434/api/tags &> /dev/null; then
-        echo "✅ Ollama service is responding"
-        
-        # Check models
-        echo "📚 Checking models..."
-        if docker exec ollama ollama list | grep -q "phi-fast:latest"; then
-            echo "✅ phi-fast:latest model available"
-        else
-            echo "❌ phi-fast:latest model not found"
-        fi
-        
-        if docker exec ollama ollama list | grep -q "deepseek-coder-fast:latest"; then
-            echo "✅ deepseek-coder-fast:latest model available"
-        else
-            echo "❌ deepseek-coder-fast:latest model not found"
-        fi
-        
-        if docker exec ollama ollama list | grep -q "mistral:latest"; then
-            echo "✅ mistral:latest model available"
-        else
-            echo "❌ mistral:latest model not found"
-        fi
-    else
-        echo "❌ Ollama service not responding"
-    fi
-else
-    echo "❌ Ollama container not running - start with the docker run command above"
-fi
+# 3. Check Ollama API is responding
+curl http://localhost:11434/api/tags
 
-# Check Python (basic check - most systems have it)
-echo "🐍 Checking Python..."
-if command -v python3 &> /dev/null; then
-    echo "✅ Python3 available: $(python3 --version)"
-else
-    echo "⚠️  Python3 not found - install with: sudo apt install python3"
-fi
+# 4. Check models are available
+docker exec ollama ollama list
 
-# Check system resources
-echo "💾 Checking system resources..."
-echo "RAM: $(free -h | grep '^Mem:' | awk '{print $2}' 2>/dev/null || echo 'Unable to check')"
-echo "Disk: $(df -h . | tail -1 | awk '{print $4}' 2>/dev/null || echo 'Unable to check') available"
-
-echo "================================="
-echo "🎯 Prerequisites check complete!"
+# 5. Test a model works
+curl -X POST http://localhost:11434/api/generate \
+  -H "Content-Type: application/json" \
+  -d '{"model": "phi-fast:latest", "prompt": "Hello", "stream": false}'
 ```
 
-### Save and Run Verification:
-```bash
-# The script is already in the repository
-cd /home/k8s/ai-learning-path/Session-8-MCP-Visual-Examples/
-chmod +x verify-setup.sh
-./verify-setup.sh
-```
+**If all commands return successful responses, you're ready!**
 
 ## 🚨 Common Issues & Solutions
 

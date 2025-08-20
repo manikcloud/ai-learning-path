@@ -7,8 +7,7 @@ This session takes you through a **complete step-by-step journey** to understand
 ## 📚 **Navigation & Quick Links**
 
 ### **📋 Setup & Prerequisites**
-- **[Complete Prerequisites Guide](PREREQUISITES.md)** - Docker, Ollama, Python setup with troubleshooting
-- **[System Verification Script](verify-setup.sh)** - Automated check if you're ready
+- **[Complete Prerequisites Guide](PREREQUISITES.md)** - Docker, Ollama setup with troubleshooting
 
 ### **🛠️ Hands-On Practice**
 - **[Working Demo Files](hands-on/json-mcp/)** - All practical exercises and tools
@@ -17,7 +16,7 @@ This session takes you through a **complete step-by-step journey** to understand
   - **[Hands-on README](hands-on/json-mcp/README.md)** - Detailed technical instructions
 
 ### **🎯 Learning Path**
-1. **Setup** → Use [Prerequisites Guide](PREREQUISITES.md) or run [verify-setup.sh](verify-setup.sh)
+1. **Setup** → Use [Prerequisites Guide](PREREQUISITES.md)
 2. **Experience Problem** → See manual model selection failures below
 3. **Experience Solution** → Try the [smart chat demo](hands-on/json-mcp/)
 4. **Understand Intelligence** → Learn how MCP routing works
