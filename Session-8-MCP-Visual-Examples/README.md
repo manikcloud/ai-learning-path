@@ -6,6 +6,23 @@ This session demonstrates the **dramatic transformation** when using MCP to coor
 
 ## 📋 Prerequisites - Quick Check
 
+### 🐳 **Setup Ollama Container (Linux)**
+
+**Start Ollama Container:**
+```bash
+# Run Ollama in Docker container
+docker run -d \
+  --name ollama \
+  -p 11434:11434 \
+  -v ollama:/root/.ollama \
+  ollama/ollama
+
+# Download models inside container
+docker exec -it ollama ollama pull codellama:latest
+docker exec -it ollama ollama pull mistral:latest
+docker exec -it ollama ollama pull deepseek-coder:latest
+```
+
 ### ✅ **Verify Your System is Ready**
 
 **Check Ollama is Running:**
